@@ -17,8 +17,6 @@
 
 <body>
 
-
-
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
@@ -97,14 +95,14 @@
             <div class="col col-sm col-md">
                 <div class="media">
                     <div class="media-body">
-                        <h2>Weekend Grand Buffet
+                        <h2 class="mt-0">Weekend Grand Buffet
                             <span class="badge badge-danger">NEW</span>
                         </h2>
                         <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers,
                             six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just
                             $19.99 per person </p>
                     </div>
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="Uthappizza">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="Buffet">
 
                 </div>
 
@@ -136,40 +134,40 @@
                 <div class="card">
                     <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
                     <div class="card-body">
-                        <div class="form-group row offset-xs-2">
-                            <label for="inputEmail3" class="col-sm-3 col-form-label">Number of Guests</label>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadioInline1">1</label>
+                        <div class="form-group row align-items-center">
+                            <label for="NumerOfGuests" class="col-sm-3 col-form-label">Number of Guests</label>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="form-check-input">
+                                <label class="form-check-label" for="customRadioInline1">1</label>
                             </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadioInline2">2</label>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" id="customRadioInline2" name="customRadioInline2" class="form-check-input">
+                                <label class="form-check-label" for="customRadioInline2">2</label>
                             </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadioInline1">3</label>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" id="customRadioInline3" name="customRadioInline3" class="form-check-input">
+                                <label class="form-check-label" for="customRadioInline3">3</label>
                             </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadioInline2">4</label>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" id="customRadioInline4" name="customRadioInline4" class="form-check-input">
+                                <label class="form-check-label" for="customRadioInline4">4</label>
                             </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadioInline1">5</label>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" id="customRadioInline5" name="customRadioInline5" class="form-check-input">
+                                <label class="form-check-label" for="customRadioInline5">5</label>
                             </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadioInline2">6</label>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" id="customRadioInline6" name="customRadioInline6" class="form-check-input">
+                                <label class="form-check-label" for="customRadioInline6">6</label>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="inputEmail3" class="col-md-3 col-form-label">Date and Time</label>
+                            <label for="DateAndTime" class="col-md-3 col-form-label">Date and Time</label>
                             <div class="col-sm-4">
-                                <input type="email" class="form-control" id="inputEmail3" placeholder="Date">
+                                <input type="date" class="form-control" id="date" placeholder="Date">
                             </div>
                             <div class="col-sm-4">
-                                <input type="email" class="form-control" id="inputEmail3" placeholder="Time">
+                                <input type="time" class="form-control" id="time" placeholder="Time">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -185,81 +183,54 @@
         </div>
     </div>
 
-    <footer>
-        <div class="container footer">
-            <div class="row">
-                <div class="col-4 offset-1 col-sm-2">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Menu</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-7 col-sm-5">
-                    <h5>Our Address</h5>
-                    <address>
-                        121, Clear Water Bay Road
-                        <br> Clear Water Bay, Kowloon
-                        <br> HONG KONG
-                        <br>
-                        <i class="fa fa-phone fa-lg"></i>: +852 1234 5678
-                        <br>
-                        <i class="fa fa-fax fa-lg"></i>: +852 8765 4321
-                        <br>
-                        <i class="fa fa-envelope fa-lg"></i>:
-                        <a href="mailto:confusion@food.net">confusion@food.net</a>
-                    </address>
-                </div>
-                <div>
-                    <div class="text-center">
-                        <a class="btn btn-social-icon btn-google" href="http://google.com/+">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id=">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/">
-                            <i class="fa fa-youtube"></i>
-                        </a>
-                        <a class="btn btn-social-icon" href="mailto:">
-                            <i class="fa fa-envelope-o"></i>
-                        </a>
+    <footer class="footer">
+            <div class="container">
+                <div class="row">             
+                    <div class="col-4 offset-1 col-sm-2">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
                     </div>
-
-
-                </div>
+                    <div class="col-7 col-sm-5">
+                        <h5>Our Address</h5>
+                        <address>
+                          121, Clear Water Bay Road<br>
+                          Clear Water Bay, Kowloon<br>
+                          HONG KONG<br>
+                          <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+                          <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                          <i class="fa fa-envelope fa-lg"></i>: 
+                          <a href="mailto:confusion@food.net">confusion@food.net</a>
+                       </address>
+                    </div>
+                    <div class="col-12 col-sm-4 align-self-center">
+                        <div class="text-center">
+                            <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                            <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                        </div>
+                    </div>
+               </div>
+               <div class="row justify-content-center">             
+                    <div class="col-auto">
+                        <p>© Copyright 2018 Ristorante Con Fusion</p>
+                    </div>
+               </div>
             </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-auto">
-                <p>© Copyright 2018 Ristorante Con Fusion</p>
-            </div>
-        </div>
-        </div>
-    </footer>
+        </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="particles.js-master/particles.min.js"></script>
-    <script src="app.js"></script>
+
 
 </body>
 
