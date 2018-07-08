@@ -46,7 +46,7 @@
                     </li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="buttonLogin">
                         <span class="fa fa-sign-in"></span> Login</a>
                 </span>
 
@@ -60,7 +60,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" id="buttonClose">&times;</button>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -82,7 +82,7 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" id="buttonCancel">Cancel</button>
                             <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
                         </div>
                     </form>
@@ -104,7 +104,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a role="button" href="#FormReserve" class="btn btn-block nav-link btn-warning" data-toggle="modal" data-target="#FormReserve">
+                    <a role="button" id="buttonReserveTable" class="btn btn-block nav-link btn-warning">
                         Reserve Table
                     </a>
 
@@ -114,13 +114,13 @@
         </div>
     </header>
 
-    <div id="FormReserve" class="modal fade" role="dialog">
+    <div id="formReserve" class="modal fade" role="dialog">
         <div class="modal-dialog" role="content">
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Reserve Table</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" id="buttonReserveTableClose">&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="row align-items-center">
@@ -169,7 +169,7 @@
                         </div>
                     </div>
                     <div class="offset-3">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-secondary" id="buttonReserveTableCancel">Cancel</button>
                         <button type="button" class="btn btn-primary">Reserve</button>
                     </div>
 
@@ -384,6 +384,30 @@
                     $("#carouselButton").children("span").removeClass('fa-play');
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
+            });
+
+            $("#buttonLogin").click(() => {
+                $('#loginModal').modal('show');
+            });
+            
+            $("#buttonClose").click(() => {
+                $('#loginModal').modal('hide');
+            });
+
+            $("#buttonCancel").click(() => {
+                $('#loginModal').modal('hide');
+            });
+
+            $("#buttonReserveTable").click(() => {
+                $('#formReserve').modal('show');
+            });
+            
+            $("#buttonReserveTableClose").click(() => {
+                $('#formReserve').modal('hide');
+            });
+
+            $("#buttonReserveTableCancel").click(() => {
+                $('#formReserve').modal('hide');
             });
 
             });
